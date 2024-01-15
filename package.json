@@ -17,5 +17,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.2",
     "webpack": "^5.89.0"
+  },
+  "dependencies": {
+    "wepack-cli": "^0.0.1-security"
   }
 }
