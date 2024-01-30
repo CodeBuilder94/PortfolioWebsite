@@ -1,4 +1,5 @@
 import React from "react";
+import Carousel from "./Carousel";
 
 const Home=()=>
 {
@@ -9,7 +10,7 @@ const Home=()=>
         <p>I offer web sites created with HTML, CSS, REACT, EXPRESS, and Postgresql.</p>
         <p>If you already know what you would like to have made check out my fiverr.</p>
 
-        
+        <Carousel/>
         </>
     )
 }
