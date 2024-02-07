@@ -8,7 +8,9 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-react']
-          }
+          },
+          test:/\.(png|jpe?g|gif)$/i,
+          loader: 'file-loader',
         }
       ]
     }

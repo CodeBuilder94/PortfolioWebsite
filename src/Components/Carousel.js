@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-//import {require} from 'browserify';
 import html5 from "../images/html5.png"//'src/images/html5.png';
 
 
