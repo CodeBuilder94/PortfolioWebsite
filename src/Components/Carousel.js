@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import html5 from "../images/html5.png"//'src/images/html5.png';
+import html5 from "../images/html5.png";//'src/images/html5.png';
 
 
 const Carousel =()=>
