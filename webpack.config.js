@@ -11,13 +11,13 @@ module.exports = {
           }
         },
         {
-          test:/\.png?$/,//(png|jpe?g|gif)$/i,
+          test:/\.png?$/,
           loader: 'file-loader',
           options:
           {
-            name:'src/images/html5.png'  
+            name:'src/images/html5.png'
           },
-        }
+        },
       ]
     }
   };
