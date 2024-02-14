@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 
 
-
 const Carousel =()=>
 {
     const data =[{icon:"/src/images/html5.png", href:"https://www.flaticon.com/free-icons/html5", title:"html5 icons", main: "Html5 icons created by Freepik - Flaticon"},
@@ -22,16 +21,21 @@ const Carousel =()=>
         return setCurrentIndex(currentIndex+1)
     }
 
-    useEffect( ()=>
+   useEffect( ()=>
         {
-            const interval = setInterval(() =>{carouselInfiniteScroll()},3000)
+            //const interval = setInterval(() =>{carouselInfiniteScroll()},3000)
             
-            return() => clearInterval(interval)
+            //return() => clearInterval(interval)
         }
     )
 
+    const jumpToImage=(index)=>
+    {
+        return setCurrentIndex(index);
+    }
+
     return(
-        <>
+        <div id="Carousel">
             <div className="carousel-container">
                 {
                     data.map((item,index)=>
@@ -48,7 +52,15 @@ const Carousel =()=>
                 })
             }
             </div>
-        </>
+            <div id="Dots">
+                {                    
+                    data.map((item,index)=>
+                    {
+                        return(index==currentIndex ? <div key={index} className="circle filled"></div>: <div key={index} onClick={()=> jumpToImage(index)} className="circle"></div>)
+                    })
+                }
+            </div>
+        </div>
     )
 }
 
