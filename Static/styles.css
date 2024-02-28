@@ -125,3 +125,8 @@
 .filled{
     background-color: lightgrey;
 }
+
+/*Contact*/
+textarea{
+    resize: none;
+}
