@@ -18,6 +18,6 @@ const sendEmail = async(name, leadEmail, message)=>
         return console.error({error});
     }
     console.log(data);
-};
+}
 
 export default sendEmail;
