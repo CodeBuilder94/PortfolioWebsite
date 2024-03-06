@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import sendEmail from "../email/sendEmail"
+
 const Contact =()=>
 {
     const [messageName, setMessageName] = useState("");
@@ -9,11 +10,18 @@ const Contact =()=>
     const send= async(ev)=>
     {
         ev.preventDefault();
-        console.log(`${messageName} with email ${messageEmail} sent the following message ${messagebody}`);
+                
+        //object with the email params
+        const templateParams={
+            from_name:messageName,
+            from_email:messageEmail,
+            message: messagebody,
+        };
+
+        await sendEmail(templateParams);
         setMessageBody("");
         setMessageEmail("");
         setMessageName("");
-        await sendEmail(messageName, messageEmail, messagebody);
     }
 
     return(
