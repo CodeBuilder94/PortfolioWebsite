@@ -6,6 +6,7 @@ const Contact =()=>
     const [messageName, setMessageName] = useState("");
     const [messageEmail, setMessageEmail]=useState("");
     const [messagebody, setMessageBody]= useState("");
+    const [sendResult, setSendResult]= useState("");
 
     const send= async(ev)=>
     {
@@ -24,6 +25,17 @@ const Contact =()=>
         setMessageName("");
     }
 
+    //set the result of the email
+    const emailResult =(result) =>{
+        if(result=="success")
+        {
+            setSendResult(result);
+        }
+        else{
+            setSendResult(result);
+        }
+    }
+
     return(
         <>
         <h3>Contact Me</h3>
@@ -37,8 +49,9 @@ const Contact =()=>
             <textarea placeholder="Type your message here." name="message" value={messagebody} onChange={ev=>(setMessageBody(ev.target.value))}/>
             <button type="submit">Send</button>
         </form>
+        {sendResult =="success"?<p>Message Sent!</p>:<p>Oops... Something went wrong. I'm sorry but the message didn't go through.</p>}
         </>
     )
 }
 
-export default Contact;
+export default {Contact, emailResult};
