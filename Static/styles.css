@@ -129,4 +129,38 @@
 /*Contact*/
 textarea{
     resize: none;
+    width: 500px;
+    height:250px;
+}
+
+.flag
+{
+    color: red;
+}
+.clear{
+    color: green;
+}
+.invalid{
+    color:red;
+    caret-color: black;
+}
+
+.valid{
+    color: green;
+    caret-color: black;
+}
+
+#emailForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#emailForm > input{
+    height:18px;
+    width: 400px;
+}
+
+#emailForm > button{
+
+width: 3rem;
 }

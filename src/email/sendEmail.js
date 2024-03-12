@@ -1,17 +1,17 @@
 import emailjs from '@emailjs/browser';
 import emailResult from '../Components/Contact';
 
-const sendEmail = async(templateParams)=>
+const sendEmail = async(templateParams, setSendResult)=>
 {
     emailjs.send("service_fihwfeb","template_j2cwarb",templateParams,"r5zDZhKCjRABfqKS9")
     .then((responce)=>{
         console.log(`Email Sent!: ${responce}`);
-        emailResult("success");
+        setSendResult("success");
     })
     .catch((error)=>
     {
         console.error(`Error: ${error}`);
-        emailResult("fail");
+        setSendResult("fail");
     })
 }
 
