@@ -13,26 +13,28 @@ const App = ()=> {
 
     return(
         <>  
-            <div id="header">
-                <h1 id="title">Tyler's Web Development</h1>
-                <nav id="navBar">
-                    <NavLink to= '/'> <h3 className='link'>Home</h3></NavLink>
-                    <NavLink to= '/pricing'> <h3 className='link'>Pricing</h3></NavLink>
-                    <NavLink to='/projects'><h3 className='link'>Projects</h3></NavLink> 
-                    <NavLink to='/about'><h3 className='link'>About</h3></NavLink>
-                    <NavLink to='/contact'><h3 className='link'>Contact</h3></NavLink>
-                </nav>
+            <div id="body">
+                <div id="header">
+                    <h1 id="title">Tyler's Web Development</h1>
+                    <nav id="navBar">
+                        <NavLink to= '/'> <h3 className='link'>Home</h3></NavLink>
+                        <NavLink to= '/pricing'> <h3 className='link'>Pricing</h3></NavLink>
+                        <NavLink to='/projects'><h3 className='link'>Projects</h3></NavLink> 
+                        <NavLink to='/about'><h3 className='link'>About</h3></NavLink>
+                        <NavLink to='/contact'><h3 className='link'>Contact</h3></NavLink>
+                    </nav>
+                </div>
+                <div id="main">
+                    <Routes>
+                        <Route path='/' element={<Home/>}></Route>
+                        <Route path='/pricing' element={<Pricing/>}></Route>
+                        <Route path='/projects' element={<Projects/>}></Route>
+                        <Route path='/contact' element={<Contact/>}></Route>
+                        <Route path='/about' element={<About/>}></Route>
+                    </Routes>
+                </div>
+                <Footer/>
             </div>
-            <div id="main">
-                <Routes>
-                    <Route path='/' element={<Home/>}></Route>
-                    <Route path='/pricing' element={<Pricing/>}></Route>
-                    <Route path='/projects' element={<Projects/>}></Route>
-                    <Route path='/contact' element={<Contact/>}></Route>
-                    <Route path='/about' element={<About/>}></Route>
-                </Routes>
-            </div>
-            <Footer/>
         </>
     )
 }

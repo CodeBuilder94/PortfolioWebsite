@@ -48,6 +48,16 @@
     box-shadow: 5px 6px 13px rgb(47, 179, 37);
 }
 
+#body
+{
+    position: relative;
+    min-height: 100vh;;
+}
+
+#main{
+    padding-bottom: 2.5rem;
+}
+
 #footer{
     background-color: rgb(47, 179, 37);
     position: absolute;
@@ -163,4 +173,49 @@ textarea{
 #emailForm > button{
 
 width: 3rem;
+}
+
+/*Projects*/
+#timeLine{
+    display: flex;
+    flex-direction: column;
+}
+
+.webPhoto{
+    height:350px;
+    width:700px;
+    margin-right: 3rem;
+}
+
+.webPhoto:hover{
+    height:400px;
+    width: 750px;
+}
+
+.chunck{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
+
+.description{
+    width: 500px;
+}
+
+/*projects line*/
+.divider{
+
+}
+
+.line{
+border-left: 6px solid black;
+height: 100%;
+}
+
+.round{
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    background-color: black;
 }
