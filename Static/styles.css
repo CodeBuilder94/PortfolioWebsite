@@ -176,46 +176,13 @@ width: 3rem;
 }
 
 /*Projects*/
-#timeLine{
-    display: flex;
-    flex-direction: column;
-}
 
 .webPhoto{
     height:350px;
     width:700px;
-    margin-right: 3rem;
 }
 
 .webPhoto:hover{
     height:400px;
     width: 750px;
-}
-
-.chunck{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 5rem;
-    margin-top: 1rem;
-}
-
-.description{
-    width: 500px;
-}
-
-/*projects line*/
-.divider{
-
-}
-
-.line{
-border-left: 6px solid black;
-height: 100%;
-}
-
-.round{
-    border-radius: 50%;
-    height: 12px;
-    width: 12px;
-    background-color: black;
 }
