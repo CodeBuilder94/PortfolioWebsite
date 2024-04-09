@@ -176,6 +176,20 @@ width: 3rem;
 }
 
 /*Projects*/
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rightBox{
+    width: 500px;
+    margin-left: 60px;
+}
+
+.rightBox, .LeftBox{
+    margin-top: 2rem;
+}
 
 .webPhoto{
     height:350px;
