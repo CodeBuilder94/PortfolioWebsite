@@ -3,13 +3,14 @@
 }
 
 #header{
-   background-color: rgb(41, 145, 33);
+   background-image: url(/src/images/WebsiteBackground.png);
    padding-top: 50px;
    width:100%;
    border-top-left-radius:10px;
    border-top-right-radius:10px;
    border-bottom-left-radius: 50% 20%;
    border-bottom-right-radius: 50% 20%;
+   color: white;
 }
 
 
@@ -21,7 +22,6 @@
 #navBar{
     display: flex;
     justify-content: center;
-    margin-left: 10rem;
     position: relative;
     border-bottom-left-radius: 50% 20%;
     border-bottom-right-radius: 50% 20%;
@@ -32,7 +32,7 @@
     padding-right: 5px;
     padding-bottom: 5px;
     border-top: 1px solid;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -59,7 +59,7 @@
 }
 
 #footer{
-    background-color: rgb(47, 179, 37);
+    background-image: url(/src/images/WebsiteBackground.png);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -199,4 +199,15 @@ width: 3rem;
 .webPhoto:hover{
     height:400px;
     width: 750px;
+}
+
+/*Pricing*/
+
+/*Home*/
+#home>p{
+    margin-left: 2rem;
+}
+
+#home >h1{
+    text-align:center;
 }
