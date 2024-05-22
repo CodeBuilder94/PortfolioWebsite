@@ -1,5 +1,10 @@
 *{
-    margin: 0;;
+    margin: 0;
+    
+}
+
+h1, h2, h3{
+    font-family: "Saira", sans-serif;
 }
 
 #header{
@@ -34,6 +39,7 @@
     border-top: 1px solid;
     color: white;
     text-decoration: none;
+    font-family: "Saira", sans-serif;
 }
 
 #navBar :nth-child(odd):not(h3)
@@ -107,7 +113,7 @@
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    
+    text-align: center;
 }
 
 .attribute-item{
