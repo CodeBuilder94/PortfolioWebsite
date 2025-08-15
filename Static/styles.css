@@ -164,6 +164,17 @@ p{
 }
 
 /*Contact*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#contact> #emailForm > button{
+    margin-top: 10px;
+
+}
 textarea{
     resize: none;
     width: 500px;

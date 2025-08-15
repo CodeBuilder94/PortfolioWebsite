@@ -51,6 +51,7 @@ const Contact =()=>
 
     return(
         <>
+        <div id="contact">
         <h3>Contact Me</h3>
         <p>Got any questions? Ask away!</p>
         <form id="emailForm" onSubmit={send}>
@@ -62,6 +63,7 @@ const Contact =()=>
             <textarea placeholder="Type your message here." name="message" value={messagebody} onChange={ev=>(setMessageBody(ev.target.value))}/>
             <button type="submit">Send</button>
         </form>
+        </div>
         {sendResult!=""?(sendResult =="success"?<p className="clear">Message Sent!</p>:<p className="flag">Oops... Something went wrong. I'm sorry but the message didn't go through.</p>):null}
         {Missing==true?<p className="flag">Make sure to fill out all fields</p>:null}
         </>
