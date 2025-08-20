@@ -10,11 +10,32 @@ import Footer from './Footer';
 
 const App = ()=> {
     const navigate = useNavigate();
+    
+    const [darkMode, changeDarkMode]=useState(true)
+    
+    const darkModeToggle =() =>
+    {
+        if(darkMode)
+        {
+            changeDarkMode(false);
+        }
+        else{
+            changeDarkMode(true);
+        }
+        
+    }
 
     return(
         <>  
-            <div id="body">
+            <div id="body" className={darkMode? 'light':"dark"}>
                 <div id="header">
+                    <div id="modeSwitch">
+                        <div id="sun">&#9788;</div>
+                        <label className="switch">
+                            <input type="checkbox"  onClick={()=> darkModeToggle()}/>
+                            <span className="slider"></span>
+                        </label>
+                    </div>
                     <h1 id="title">Tyler's Web Development</h1>
                     <nav id="navBar">
                         <NavLink to= '/'> <h3 className='link'>Home</h3></NavLink>
