@@ -240,6 +240,12 @@ width: 3rem;
 }
 
 /*Pricing*/
+#pricing{
+   
+    margin-left: 6rem;
+    margin-top: 2rem;
+    width: 85%
+}
 
 /*Home*/
 #home>p{
