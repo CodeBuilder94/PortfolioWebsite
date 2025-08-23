@@ -21,11 +21,12 @@ p{
 }
 
 #header{
+   
    background-image: url(/src/images/WebsiteBackground.png);
    padding-top: 25px;
    width:100%;
-   border-top-left-radius:10px;
-   border-top-right-radius:10px;
+   border-top-left-radius:1px;
+   border-top-right-radius:1px;
    border-bottom-left-radius: 50% 20%;
    border-bottom-right-radius: 50% 20%;
    color: white;
@@ -91,12 +92,14 @@ p{
     display: inline-block;
     width: 50px;
     height: 24px;
+     margin-top: 5px;
 }
 /*Hide the default checkbox*/
 .switch input{
     opacity: 0;
     width: 0;
     height: 0;
+    
 }
 /*The Slaider*/
 .slider{
@@ -141,11 +144,9 @@ input:checked + .slider:before {
 }
 
 #sun{
-    width: 50px;
-    margin-top: 5px;
-    height:auto;
+    padding-right: 10px;
+    font-size: 30px;
 }
-
 
 .active{
     text-shadow: rgb(255, 255, 255) 2px 5px 15px;
