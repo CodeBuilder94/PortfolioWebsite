@@ -4,12 +4,14 @@ const Projects =() =>
 {
     return(
         <>
-            <h2>My Projects</h2>
-            <p>Take a look at the varius project that I have worked on by my self or with others.</p>
+            <div id="projectTitle">
+                <h2>My Projects</h2>
+                <p>Take a look at the varius project that I have worked on by my self or with others.</p>
+            </div>
             <div id="projects">
                 <div className="LeftBox">
                     <div className="site">
-                        <a href="https://pusheen-bazaar.onrender.com/"><img className="webPhoto" src ="/src/images/PusheenBazaarPhoto.png" alt="Pusheen Bazaar"/></a>
+                        <a href="https://pusheen-bazaar.onrender.com/" target="_blank"><img className="webPhoto" src ="/src/images/PusheenBazaarPhoto.png" alt="Pusheen Bazaar"/></a>
                     </div>
                 </div>
                 <div className="rightBox">
@@ -24,7 +26,7 @@ const Projects =() =>
                 </div>
                 <div className="LeftBox">
                 <div className="site">
-                    <a href="https://merry-begonia-1fbad0.netlify.app"><img className="webPhoto" src="/src/images/StrangersThings.png" alt="Stranges Things"/></a>
+                    <a href="https://merry-begonia-1fbad0.netlify.app" target="_blank"><img className="webPhoto" src="/src/images/StrangersThings.png" alt="Stranges Things"/></a>
                     </div>
                 </div>
                 <div className="rightBox">

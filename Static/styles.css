@@ -317,6 +317,30 @@ width: 3rem;
     width: 750px;
 }
 
+#projectTitle{
+    margin-left:125px;
+}
+
+#projectTitle > h2{
+    font-size: 32px;
+}
+
+#projectTitle >p{
+    font-size: 18px;
+}
+
+.siteName{
+    font-size:20px;
+}
+
+.LeftBox :last-of-type{
+ padding-bottom: 1rem;
+}
+
+.rightBox :last-of-type{
+    padding-bottom: 1rem;
+}
+
 /*Pricing*/
 #pricing{
    
