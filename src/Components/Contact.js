@@ -19,16 +19,16 @@ const Contact =()=>
         if(validateEmail=="valid" && messageName!="" && messagebody!="")
         {
             //object with the email params
-        const templateParams={
-            from_name:messageName,
-            from_email:messageEmail,
-            message: messagebody,
-        };
-        
-        await sendEmail(templateParams, setSendResult);
-        setMessageBody("");
-        setMessageEmail("");
-        setMessageName("");
+            const templateParams={
+                from_name:messageName,
+                from_email:messageEmail,
+                message: messagebody,
+            };
+            
+            await sendEmail(templateParams, setSendResult);
+            setMessageBody("");
+            setMessageEmail("");
+            setMessageName("");
 
         }
         else{
@@ -52,7 +52,7 @@ const Contact =()=>
     return(
         <>
         <div id="contact">
-        <h3>Contact Me</h3>
+        <h2>Contact Me</h2>
         <p>Got any questions? Ask away!</p>
         <form id="emailForm" onSubmit={send}>
             <label><sup className="flag">*</sup>Name:</label>

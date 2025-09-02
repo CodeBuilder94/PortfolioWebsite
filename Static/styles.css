@@ -378,10 +378,24 @@ width: 3rem;
 
 /*About Page*/
 #about{
-    margin-left: 1rem;
+    margin-left: 2.5rem;
 }
 
-#about > img{
+#about > .aboutSection > div > img{
     max-width: 300px;
     height: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#about > p{
+    width:75%;
+}
+
+p{
+    margin-top: 10px;
+}
+
+.aboutSection{
+    margin-bottom: 1.5rem;
 }
