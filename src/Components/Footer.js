@@ -5,7 +5,8 @@ const Footer= () =>
     return (
         <>
             <div id="footer">
-            <h3>Footer</h3>
+             <small>Website created by <b>Tyler Mitchell</b></small>
+             <small>Find me on <b>Fiverr</b></small>
             </div>
         </>
     )
