@@ -18,15 +18,15 @@ const Pricing = () =>
                         </ul>
                         
                     </div>
-                    <div className="service">
+                   { /*<div className="service">
                         <h2>Back End Only</h2>
                         <h2 className="price">$80+</h2>
                         <ul>
                             <li>Have a fully created database and API to access it from. Cost subject to complexity of the project</li>
                             <li>Uses Express and Postgresql</li>
                         </ul>
-                    </div>
-                    <div className="service">
+                    </div>*/}
+                    {/*<div className="service">
                         <h2>Front and Back End</h2> 
                         <h2 className="price">$160+</h2>
                         <ul>
@@ -34,7 +34,7 @@ const Pricing = () =>
                             <li> Have a fully created database and API to access it from. Cost subject to complexity of the project</li>
                             <li>Uses HTML, CSS, JavaScript, REACT, Express, and Postgresql</li>
                         </ul>
-                    </div>
+                    </div>*/}
                 </div>
             </div>
         </>
