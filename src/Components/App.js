@@ -47,7 +47,7 @@ const App = ()=> {
                 </div>
                 <div id="main">
                     <Routes>
-                        <Route path='/' element={<Home/>}></Route>
+                        <Route path='/' element={<Home darkMode={darkMode}/>}></Route>
                         <Route path='/pricing' element={<Pricing/>}></Route>
                         <Route path='/projects' element={<Projects/>}></Route>
                         <Route path='/contact' element={<Contact/>}></Route>

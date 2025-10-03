@@ -3,15 +3,6 @@
     
 }
 
-.light{
-    background-color: white;
-    color:black
-}
-.dark{
-    background-color: black;
-    color: white;
-}
-
 h1, h2, h3{
     font-family: "Saira", sans-serif;
 }
@@ -175,7 +166,7 @@ input:checked + .slider:before {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    width: 512px;;
+    width: 350px;
     height: fit-content;
     
 }
@@ -314,7 +305,7 @@ width: 3rem;
 }
 
 #projectTitle{
-    margin-left:125px;
+    text-align: center;
 }
 
 #projectTitle > h2{
@@ -374,7 +365,7 @@ width: 3rem;
 
 /*About Page*/
 #about{
-    margin-left: 2.5rem;
+    text-align: center;
 }
 
 #about > .aboutSection > div > img{
@@ -417,4 +408,14 @@ p{
 
 #footer > small{
     margin-left: 2rem;
+}
+
+/*Light/Darkmode */
+.light{
+    background-color: white;
+    color:black
+}
+.dark{
+    background-color: black;
+    color: white;
 }

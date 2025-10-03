@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from "react";
 
 
-const Carousel =()=>
+const Carousel =(props)=>
 {
+    const {darkMode} = props;
     const data =[{icon:"/src/images/html5.png", href:"https://www.flaticon.com/free-icons/html5", title:"html5 icons", main: "HTML5 icons created by Freepik - Flaticon"},
     {icon:"/src/images/css-3.png", href:"https://www.flaticon.com/free-icons/css-3", title:"css 3 icons", main:"CSS 3 icons created by Freepik - Flaticon"},
     {icon:"/src/images/java-script.png", href:"https://www.flaticon.com/free-icons/java", title:"java icons", main:"Java Script icons created by Pixel perfect - Flaticon"},
@@ -48,7 +49,7 @@ const Carousel =()=>
             {
                 data.map((item,index )=>
                 {
-                    return (<a className="attribute-item" key={index} href={item.href} title={item.title} style={{transform: `translate(-${currentIndex *100}%)`}}>{item.main}</a>)
+                    return (<a className={darkMode? 'light attribute-item':"dark attribute-item"} key={index} href={item.href} title={item.title} style={{transform: `translate(-${currentIndex *100}%)`}}>{item.main}</a>)
                 })
             }
             </div>
