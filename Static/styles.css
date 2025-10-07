@@ -331,9 +331,14 @@ width: 3rem;
 /*Pricing*/
 #pricing{
    
-    margin-left: 6rem;
+    text-align: center;
     margin-top: 2rem;
-    width: 85%
+   
+}
+
+#pricing > p{
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .price{
