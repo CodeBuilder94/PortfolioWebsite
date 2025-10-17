@@ -11,13 +11,16 @@ const Pricing = () =>
                 <p>(Uses HTML, CSS, JavaScript, and REACT)</p>
                 <div id="services">
                     <div className="service">
-                        <h2>1 to 2 Pages: <b>$25</b></h2>
+                        <h2>Basic:</h2>
+                        <h3>1 to 2 Pages: <b>$25</b></h3>
                     </div>
                     <div className="service">
-                        <h2>3 to 5 Pages: <b>$50</b></h2>
+                        <h2>Standard:</h2>
+                        <h3>3 to 5 Pages: <b>$50</b></h3>
                     </div>
                     <div className="service">
-                        <h2>6+ Pages: <b>$90</b></h2>
+                        <h2>Premium:</h2>
+                        <h3>6+ Pages: <b>$90</b></h3>
                     </div>
                    { /*<div className="service">
                         <h2>Back End Only</h2>
