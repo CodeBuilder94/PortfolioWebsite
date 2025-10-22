@@ -357,8 +357,8 @@ align-items: center;
 
 
 #services > h2{
-    margin-top: 5px;
-    font-size: 28px;
+    margin-top: 10px;
+    font-size: 29px;
 }
 
 .service{
@@ -373,15 +373,12 @@ align-items: center;
    text-align: center;
 }
 
-#details > h2{
-    margin-top: 7px;
-    font-size: 28px;
+#details > h2, #details > h3{
+    margin-top: 10px;
+    font-size: 29px;
 
 }
 
-#details > h3{
-    margin-top: 5px;
-}
 
 #details > p
 {
